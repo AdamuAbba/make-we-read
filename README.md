@@ -1,12 +1,20 @@
 
-# make-we-read  <img src="https://lottiefiles.com/8617-open-book" height="250">
+<h1>Make we read <img src="https://cdn.iconscout.com/icon/free/png-64/reading-2651006-2210919.png" height="50"></h1> 
 
+<div align="center">
+<img src="https://cdni.iconscout.com/illustration/premium/thumb/books-digitization-4383196-3679331.png"/>
 a simple android book app using google books api and android WebView to display books details
+</div>
+
+
+
 ## Demo
 order..
 
 - Home Page                  
 - books view page
+
+<img src="https://github.com/AdamuAbba/demo-pics/blob/main/make-we-read/make-we-read%201.gif" height="450"/>---<img src="https://github.com/AdamuAbba/demo-pics/blob/main/make-we-read/make%20we%20read%202.gif" height="450" />
 
 ## Authors
 
@@ -34,8 +42,7 @@ order..
 ## Features
 
 - simplisitic design
-- Simple fluid animations with {framer motion} animation library 
-- Dynamic data using Sanity.io headless CMS
+- Google books api
 
   
 ## Tech Stack
