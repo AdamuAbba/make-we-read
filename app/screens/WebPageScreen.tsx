@@ -1,20 +1,15 @@
-import React from "react";
+import { WebScreenProps } from "@configs/Types";
+import React, { FC } from "react";
 import { Dimensions, StyleSheet, Alert } from "react-native";
 import WebView from "react-native-webview";
 import LoadingComp from "../components/LoadingComp";
 
 const { height, width } = Dimensions.get("window");
 
-const ErrorComp = ({ name }) => {
-  return Alert.alert("error", { name });
-};
-
-const WebPageScreen = ({ route }) => {
-  const data = route.params;
-
+const WebPageScreen: FC<WebScreenProps> = ({ route }) => {
   return (
     <WebView
-      source={{ uri: data }}
+      source={{ uri: route.params?.bookPreviewLink }}
       startInLoadingState={true}
       setDisplayZoomControls
       overScrollMode="always"
@@ -25,7 +20,6 @@ const WebPageScreen = ({ route }) => {
       geolocationEnabled={true}
       showsHorizontalScrollIndicator
       renderLoading={() => <LoadingComp />}
-      renderError={(errorName) => <ErrorComp name={errorName} />}
       style={styles.container}
     />
   );

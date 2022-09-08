@@ -1,8 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { colors } from "../configs/gloabalStyles";
 import { useRoute } from "@react-navigation/core";
-const HeaderComp = ({ navigation, height }) => {
+import { colors } from "@configs/globalStyles";
+import { FC } from "react";
+import { HeaderCompProps } from "@configs/Types";
+
+const HeaderComp: FC<HeaderCompProps> = ({ height }) => {
   const route = useRoute();
   return (
     <View style={{ ...styles.container, height: height }}>

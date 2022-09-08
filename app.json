@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "make-we-read",
+    "name": "Make We Read",
     "slug": "make-we-read",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
     "splash": {
       "image": "./app/assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -18,7 +18,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.ajayiisaac.makeweread",
+      "package": "com.shyXperience.makeweread",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",

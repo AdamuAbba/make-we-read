@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { View, TextInput, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { setSearchValue } from "../redux/bookNameSlice";
-import { colors } from "../configs/gloabalStyles";
 
 const SearchBar = () => {
   const dispatch = useDispatch();

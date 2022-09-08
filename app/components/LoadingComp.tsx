@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { View, StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
 
-const LoadingComp = () => {
+const LoadingComp: FC = () => {
   return (
     <View style={styles.container}>
       <LottieView
@@ -19,6 +19,7 @@ const LoadingComp = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
